@@ -28,3 +28,11 @@ class Solution:
 obj = Solution()
 res = obj.countRep2("/Users/i346327/pythonds/pythonds/03-FileHandling/file1.txt")
 print(res)
+
+
+#
+# check if file exists or not
+# 
+
+import os.path
+os.path.exists("/Users/i346327/pythonds/pythonds/03-FileHandling/file1.txt")

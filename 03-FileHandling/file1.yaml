@@ -1,0 +1,15 @@
+---
+config:
+  use_cheaper_vm_types: false
+  director:
+    max_tasks: 10000
+  avs:
+    host: google.com
+    evaluation_id: "1234567"
+credentials:
+  username: "admin"
+  password: "password"
+  users:
+    - rohith
+    - sachin
+    - cena
