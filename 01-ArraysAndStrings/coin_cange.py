@@ -21,4 +21,4 @@ def change_given_ad(amount):
             break
 
     print(aval_bal)
-change_given_ad(5758585000)
+change_given_ad(5000)
