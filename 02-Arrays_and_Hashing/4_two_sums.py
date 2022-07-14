@@ -12,5 +12,5 @@ class Solution:
                     return [i,j]
 
 obj = Solution()
-res = obj.twoSums([2,7,11,15],9)
+res = obj.twoSums([2,7,11,15],18)
 print(res)

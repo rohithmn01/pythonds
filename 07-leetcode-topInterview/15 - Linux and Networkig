@@ -1,0 +1,42 @@
+*******************************
+15 mins - Linux and Networkig
+*******************************
+1) What happens when you open an URL in your browser.?
+    DNS google.com
+    TCP (TLS) SYN, SYN+Ack, ACK
+    Data Exchange
+2) - List all the files whose size is greater than 1GB (find)
+    find . -size +1G -exec ls -l
+   - Soft link.
+    ln -s 
+   - list all directories with their sizes in descending order (du)
+    du -shx * 
+   - how to create public/private key pair and share with github.
+   openssl 
+
+3) your application deployed on k8s is having high latency issues..! How do you troubleshoot.?
+        - login to k8s clu
+        - check on which node this app is deployed
+        - check how many pods/replicas are ruuning
+        - chek the load and memory
+        - verity the io stats
+        - if required scale up or restart the pods.
+
+
+***********************************
+15 mins - cloud, docker and kubernetes
+***********************************
+1) GCP/AWS 
+    GCP: 
+    AWS: 
+2) Docker:
+3) K8s: difference b/w a deployment abd stateful set. when to use what?
+
+***********************************
+15 mins- Python Coding
+***********************************
+1) check Anagram 
+2) ## Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+## Input: nums = [2,7,11,15], target = 9
+## Output: [0,1]
+3) check palindrome

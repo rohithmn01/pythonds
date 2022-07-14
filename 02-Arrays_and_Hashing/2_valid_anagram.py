@@ -13,5 +13,5 @@ class Solution:
         else:
             return True
 obj = Solution()
-res = obj.isAnagram("rohith","kavya")
+res = obj.isAnagram("rohith","ithroh")
 print(res)
