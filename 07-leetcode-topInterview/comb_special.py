@@ -1,21 +1,24 @@
-from itertools import combinations
-comb=[]
-res=[]
-def substrCount(n, s):
-    for x,y in combinations(range(len(s)+1),2):
-        comb.append(s[x:y])
-    #print(comb)
-    for i in comb:
-        if len(i) == 1:
-            res.append(i)
-        elif len(i) == 2 and len(set(i)) == 1:
-            res.append(i)
-        elif len(i) > 2:
-            mid = len(i)//2
-            l = list(i)
-            l.pop(mid)
-            if len(set(l)) == 1:
-                res.append(i)
-    #print(res)
-    return len(res)
-substrCount(5,"aaaa")
+import heapq
+import ipdb
+def heapreplace_max(heap, item):
+    heap[0] = item
+    heapq._siftup_max(heap, 0)
+
+
+
+def minsum(nums,k):
+    heap = nums
+    heapq._heapify_max(heap)
+    print(heap)
+    for i in range(k):
+        max_value = heap[0]
+        heapreplace_max(heap, max_value//2)
+        print(heap)
+    return sum(heap)
+
+
+
+nums=[10,20,7]
+k=4
+res = minsum(nums,k)
+print(res)

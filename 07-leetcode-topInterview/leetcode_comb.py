@@ -11,5 +11,11 @@ print(res)
 sor_res=sorted(res,key=itemgetter(0))
 print(sor_res)
 
-for i,v in sor_res:
-    if v[1] < 
+for i,x in enumerate(sor_res):
+    for j,y in enumerate(sor_res):
+        if i == j:
+            continue
+        else:
+            if x[1] == y[0]:
+                print(sor_res.pop(i))
+
